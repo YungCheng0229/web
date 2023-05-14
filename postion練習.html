@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<style>
+		.wrap{
+			width: 500px;
+			padding: 10px;
+			margin: 30px auto;
+			border: #000 2px solid;
+			background-color: #ccc;
+			position: relative;
+		}
+
+		#pos{
+			width: 15px;
+			padding: 10px;
+			background: #f00;
+			position: absolute;
+			right: -30px;
+			top: 0;
+			z-index: -1;
+		}
+		p{
+			background-color: #fff;
+		}
+		.left{
+			width: 400px;
+			margin-bottom: 10px;
+			float: left;
+		}
+		.right{
+			width: 100px;
+			height: 100px;
+			background-color: #f00;
+			float: right;
+			position: relative;
+			right: -30px;
+			top: 0;
+		}
+		.clear{
+			clear: both;
+		}
+
+		#pagetop{
+			margin: 0;
+			color: #fff;
+			padding: 10px;
+			position: fixed;
+			right: 0;
+			bottom: 42px;
+			background-color: #000;
+		}
+
+		#fixed{
+			width: 100%;
+			padding: 10px 0;
+			background-color: #f00;
+			position: fixed;
+			bottom: 0;
+			left: 0;
+		}
+	</style>
+</head>
+<body>
+	<div class="wrap">
+		<p>Lorem ipsum dolor sit amet consectetur.</p>
+		<div id="pos">絕對位置</div>
+		<p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Dignissimos dicta repellendus, perspiciatis expedita ipsum doloribus fugiat architecto soluta maxime nam libero earum quasi repudiandae in nostrum, quas qui ratione. Quos veritatis odio dolores voluptatum deserunt quis deleniti ratione necessitatibus possimus.</p>
+	</div>
+
+	<div class="wrap">
+		<p class="left">Lorem ipsum dolor sit, amet consectetur.</p>
+		<p class="right">相對位置</p>
+		<p class="clear">Lorem ipsum, dolor sit amet consectetur.</p>
+	</div>
+	<div id="pagetop">Top</div>
+	<div id="fixed">固定配置選單</div>
+</body>
+</html>
