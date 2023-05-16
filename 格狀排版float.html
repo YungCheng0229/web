@@ -1,43 +1,50 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>Document</title>
 	<style>
-		.wrap{
+		.wrap {
 			width: 300px;
 			margin: 0 auto;
-/*			background-color: #aaa;*/
+			/*			background-color: #aaa;*/
 			overflow: hidden;
 		}
-		.item{
+
+		.item {
 			width: 80px;
 			height: 80px;
 			margin: 10px;
 			background-color: #fa0;
 		}
-		.item img{
+
+		.item img {
 			width: 100%;
 			height: 100%;
 			vertical-align: top;
 		}
-		.item:nth-child(3n+1){
+
+		.item:nth-child(3n+1) {
 			width: 180px;
 			height: 180px;
 		}
+
 		.item:nth-child(6n+1),
 		.item:nth-child(6n+2),
-		.item:nth-child(6n+3){
+		.item:nth-child(6n+3) {
 			float: left;
 		}
+
 		.item:nth-child(6n+4),
 		.item:nth-child(6n+5),
-		.item:nth-child(6n+6){
+		.item:nth-child(6n+6) {
 			float: right;
 		}
 	</style>
 </head>
+
 <body>
 	<div class="wrap">
 		<div class="item"><img src="https://picsum.photos/id/137/200/300"></div>
@@ -51,4 +58,5 @@
 		<div class="item"><img src="https://picsum.photos/id/37/200/300"></div>
 	</div>
 </body>
+
 </html>
