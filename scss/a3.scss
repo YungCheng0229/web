@@ -1,0 +1,93 @@
+@import url("https://fonts.googleapis.com/css?family=Noto+Sans+TC:300,700,900&display=swap");
+
+* {
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    font-family: 'Noto Sans TC', sans-serif;
+}
+
+html,
+body {
+    height: 100%;
+}
+
+// 讓畫面可以在可視範圍正中間 
+body {
+    display: flex;
+    align-items: center;
+    background-color: #333;
+}
+
+.wrap {
+    width: 1200px;
+    display: flex;
+    flex-wrap: wrap;
+    // 將邊界平均分配到上下左右
+    margin: auto;
+}
+
+//  368 + 15*2 + 1*2 = 400
+.item {
+    width: 368px;
+    margin: 15px;
+    text-align: center;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    transform: translateY(0px);
+    transition: .5s;
+
+    img {
+        width: 100%;
+    }
+
+    h2 {
+        border-bottom: 1px solid #888;
+        padding-bottom: .3em;
+        margin-bottom: .4em;
+        font-weight: 700;
+        transition: .5s;
+    }
+}
+
+.item .txt {
+    padding: 20px;
+    position: relative;
+
+    // 364 /2 = 184
+    // 產生三角形圖案
+    &::before {
+        content: "";
+        position: absolute;
+        width: 0;
+        height: 0;
+        left: 0;
+        top: 0;
+        border-top: 50px solid transparent;
+        border-left: 184px solid #fff;
+        border-right: 184px solid #fff;
+        transform: translateY(-100%);
+    }
+}
+
+.item:hover {
+    transform: translateY(-50px);
+
+    .txt {
+        background-image: linear-gradient(0deg, #fa0, #f0a);
+
+        &::before {
+            border-left: 184px solid #f0a;
+            border-right: 184px solid #f0a;
+        }
+    }
+
+    h2 {
+        color: #fff;
+        border-bottom-color: #fff;
+    }
+
+    p {
+        color: #fff;
+    }
+}
