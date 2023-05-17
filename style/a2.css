@@ -12,15 +12,16 @@
   display: -ms-flexbox;
   display: flex;
 }
-.warp > .item {
+
+.item {
   width: 25%;
   position: relative;
 }
-.warp > .item img {
+.item img {
   width: 100%;
   vertical-align: middle;
 }
-.warp > .item .txt {
+.item .txt {
   position: absolute;
   top: 0;
   right: 0;
@@ -42,11 +43,11 @@
   -webkit-transition: opacity 0.5s;
   transition: opacity 0.5s;
 }
-.warp > .item .txt h2 {
+.item .txt h2 {
   font-size: 28px;
   color: #fa0;
 }
-.warp > .item .txt h2::after {
+.item .txt h2::after {
   content: "";
   display: block;
   width: 0%;
@@ -56,14 +57,15 @@
   -webkit-transition: width 0.5s 0.3s;
   transition: width 0.5s 0.3s;
 }
-.warp > .item .txt p {
+.item .txt p {
   font-size: 18px;
   color: #fff;
   font-weight: 300;
 }
-.warp > .item:hover .txt {
+
+.item:hover .txt {
   opacity: 1;
 }
-.warp > .item:hover h2::after {
+.item:hover h2::after {
   width: 100%;
 }

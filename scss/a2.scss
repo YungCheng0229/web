@@ -10,61 +10,61 @@
 .warp {
     width: 100%;
     display: flex;
+}
 
-    >.item {
-        width: 25%;
-        position: relative;
+.item {
+    width: 25%;
+    position: relative;
 
-        img {
-            width: 100%;
-            vertical-align: middle;
-        }
-
-        .txt {
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-            padding: 20px;
-            background-color: rgba(0, 0, 0, .7);
-
-            display: flex;
-            justify-content: center;
-            flex-direction: column;
-            opacity: 0;
-            transition: opacity .5s;
-
-            h2 {
-                font-size: 28px;
-                color: #fa0;
-            }
-
-            h2::after {
-                content: "";
-                display: block;
-                width: 0%;
-                height: 2px;
-                margin: 10px 0;
-                background-color: #fa0;
-                transition: width .5s .3s;
-            }
-
-            p {
-                font-size: 18px;
-                color: #fff;
-                font-weight: 300;
-            }
-        }
+    img {
+        width: 100%;
+        vertical-align: middle;
     }
 
-    >.item:hover {
-        .txt {
-            opacity: 1;
+    .txt {
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+        padding: 20px;
+        background-color: rgba(0, 0, 0, .7);
+
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        opacity: 0;
+        transition: opacity .5s;
+
+        h2 {
+            font-size: 28px;
+            color: #fa0;
         }
 
         h2::after {
-            width: 100%;
+            content: "";
+            display: block;
+            width: 0%;
+            height: 2px;
+            margin: 10px 0;
+            background-color: #fa0;
+            transition: width .5s .3s;
         }
+
+        p {
+            font-size: 18px;
+            color: #fff;
+            font-weight: 300;
+        }
+    }
+}
+
+.item:hover {
+    .txt {
+        opacity: 1;
+    }
+
+    h2::after {
+        width: 100%;
     }
 }
