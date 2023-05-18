@@ -9,7 +9,7 @@
 
 body {
     padding: 100px 0;
-    background: linear-gradient(20deg, #3d5493, #1a2a);
+    background: linear-gradient(20deg, #515861, #2c384a);
 }
 
 .wrap {
@@ -48,7 +48,7 @@ body {
 
         img {
             width: 100%;
-            vertical-align: midde;
+            vertical-align: middle;
         }
     }
 }
@@ -57,7 +57,7 @@ body {
     margin-right: -10%;
 }
 
-// 如果是二的倍數就將flex方向翻轉
+// 物件如果是二的倍數就將flex方向翻轉
 .item:nth-of-type(2n) {
     flex-direction: row-reverse;
     margin-right: 10%;
@@ -69,7 +69,7 @@ body {
     }
 
     &:nth-child(2) .txt {
-        background-color: rgba(42, 253, 208, .8);
+        background-color: rgba(120, 253, 208, 0.8);
     }
 
     &:nth-child(3) .txt {
