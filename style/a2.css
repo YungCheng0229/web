@@ -6,6 +6,17 @@
   font-family: "Noto Sans TC", sans-serif;
 }
 
+body {
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #3f4156;
+}
+
 .warp {
   width: 100%;
   display: -webkit-box;
@@ -23,10 +34,6 @@
 }
 .item .txt {
   position: absolute;
-  top: 0;
-  right: 0;
-  bottom: 0;
-  left: 0;
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.7);
   display: -webkit-box;
@@ -45,7 +52,7 @@
 }
 .item .txt h2 {
   font-size: 28px;
-  color: #fa0;
+  color: #c9daea;
 }
 .item .txt h2::after {
   content: "";
@@ -53,7 +60,7 @@
   width: 0%;
   height: 2px;
   margin: 10px 0;
-  background-color: #fa0;
+  background-color: #c9daea;
   -webkit-transition: width 0.5s 0.3s;
   transition: width 0.5s 0.3s;
 }

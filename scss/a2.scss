@@ -7,6 +7,14 @@
     font-family: 'Noto Sans TC', sans-serif;
 }
 
+// 讓畫面在可視範圍中間
+body {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    background-color: #3f4156;
+}
+
 .warp {
     width: 100%;
     display: flex;
@@ -22,11 +30,12 @@
     }
 
     .txt {
+        // 設定後可以讓文字在圖片上方顯示
         position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
+        // top: 0;
+        // right: 0;
+        // bottom: 0;
+        // left: 0;
         padding: 20px;
         background-color: rgba(0, 0, 0, .7);
 
@@ -38,7 +47,7 @@
 
         h2 {
             font-size: 28px;
-            color: #fa0;
+            color: #c9daea;
         }
 
         h2::after {
@@ -47,7 +56,7 @@
             width: 0%;
             height: 2px;
             margin: 10px 0;
-            background-color: #fa0;
+            background-color: #c9daea;
             transition: width .5s .3s;
         }
 
