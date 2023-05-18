@@ -8,9 +8,8 @@
 
 .banner {
   width: 100%;
-  height: 100vh;
-  background: -webkit-gradient(linear, left top, right top, color-stop(50%, #fab), color-stop(50%, transparent)), url("https://picsum.photos/1200/600?random=1") right center/auto 100%;
-  background: linear-gradient(90deg, #fab 50%, transparent 50%), url("https://picsum.photos/1200/600?random=1") right center/auto 100%;
+  height: 50vh;
+  background: linear-gradient(135deg, #9bb5b0 50%, transparent 50%), url("https://picsum.photos/id/1076/1200/400") no-repeat center center/cover;
 }
 .banner .container {
   width: 100%;

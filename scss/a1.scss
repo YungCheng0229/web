@@ -9,10 +9,10 @@
 
 .banner {
     width: 100%;
-    height: 100vh;
+    height: 50vh;
     // backgrounds: color \ image \  repeat \ attachment \  position \ size
     // linear-gradient(角度, 色彩1 占比%, 色彩2 占比%)
-    background: linear-gradient(90deg, #fab 50%, transparent 50%), url("https://picsum.photos/1200/600?random=1") right center / auto 100%;
+    background: linear-gradient(135deg, #9bb5b0 50%, transparent 50%), url("https://picsum.photos/id/1076/1200/400") no-repeat center center / cover;
 
     .container {
         width: 100%;
