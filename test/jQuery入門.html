@@ -8,7 +8,6 @@
     <title>Document</title>
     <style>
         .box {
-            position: absolute;
             background-color: #fa0;
             width: 100px;
             height: 100px;
@@ -27,28 +26,31 @@
 </head>
 
 <body>
-
+    <!-- 移動.box位置 -->
     <button class="left">left</button>
     <button class="right">right</button>
     <div class="box"></div>
 
+    <!-- show -->
     <button id="show">show</button>
     <div id="myshow">123</div>
 
 
 
 
-    <script src="./script/jquery-3.7.0.js"></script>
+    <script src="../script/jquery-3.7.0.js"></script>
     <script>
+        // 讓.box方塊透過按鈕移動位置
         $(document).ready(function () {
             $(".left").click(function () {
-                $(".box").animate({ left: '-50px' }, "slow");
+                $(".box").animate({ padding: '-50px' }, "slow");
             });
             $(".right").click(function () {
-                $(".box").animate({ left: '+50px' }, "slow");
+                $(".box").animate({ padding: '+50px' }, "slow");
             });
         });
 
+        // 讓#myshoww透過按鈕改變動畫與出現
         $("#show").click(function () {
             $("#myshow").toggle("slow").animate({
                 width: "90%", hight: "100%", borderwidth: 10
